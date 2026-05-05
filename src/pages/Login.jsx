@@ -4,7 +4,7 @@ const Login = () => {
 
     sessionStorage.setItem('oauth_state', state);
     // Redirect to your BACKEND's GitHub auth route
-    window.location.href = `https://user-profiler-api.vercel.app/auth/github?state=${state}`;
+    window.location.href = `https://insighta-backend-python.vercel.app/auth/github?state=${state}`;
   };
 
   return (

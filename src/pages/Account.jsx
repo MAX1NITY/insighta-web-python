@@ -11,7 +11,7 @@ const Account = () => {
     const fetchUser = async () => {
       try {
         const res = await axios.get(
-          'https://user-profiler-api.vercel.app/api/me',
+          'https://insighta-backend-python.vercel.app/api/me',
           {
             headers: { 'X-API-Version': '1' },
             withCredentials: true
@@ -31,7 +31,7 @@ const Account = () => {
   const handleLogout = async () => {
     try {
       await axios.post(
-        'https://user-profiler-api.vercel.app/auth/logout',
+        'https://insighta-backend-python.vercel.app/auth/logout',
         {},
         { withCredentials: true }
       );

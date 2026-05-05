@@ -12,7 +12,7 @@ const ProfileDetail = () => {
     const fetchProfile = async () => {
       try {
         const res = await axios.get(
-          `https://user-profiler-api.vercel.app/api/profiles/${id}`,
+          `https://insighta-backend-python.vercel.app/api/profiles/${id}`,
           {
             headers: { 'X-API-Version': '1' },
             withCredentials: true

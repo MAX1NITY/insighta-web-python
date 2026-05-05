@@ -17,7 +17,7 @@ const Search = () => {
     setSearched(true);
     try {
       const res = await axios.get(
-        `https://user-profiler-api.vercel.app/api/profiles/search?q=${encodeURIComponent(query)}`,
+        `https://insighta-backend-python.vercel.app/api/profiles/search?q=${encodeURIComponent(query)}`,
         {
           headers: { 'X-API-Version': '1' },
           withCredentials: true

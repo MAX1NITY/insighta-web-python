@@ -19,7 +19,7 @@ const Profiles = () => {
       if (filters.age_group)  params.append('age_group', filters.age_group);
 
       const res = await axios.get(
-        `https://user-profiler-api.vercel.app/api/profiles?${params.toString()}`,
+        `https://insighta-backend-python.vercel.app/api/profiles?${params.toString()}`,
         {
           headers: { 'X-API-Version': '1' },
           withCredentials: true
